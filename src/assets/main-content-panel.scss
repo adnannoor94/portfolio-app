@@ -1,0 +1,437 @@
+.main-content {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: calc(100vh - 30px);
+  padding-right: 80px;
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+  overflow-y: scroll;
+}
+
+.main-content.in-active {
+  transform: translateX(-150px);
+}
+
+.curtain {
+  background: rgba(30, 30, 40, 0.88);
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+}
+
+.in-active .curtain {
+  pointer-events: all;
+  opacity: 0.7;
+}
+
+.main-top-bg {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-position: center;
+  height: 400px;
+  background-size: cover;
+  background-image: url(https://lemotivate.com/portfolio/bg.jpg);
+}
+
+.main-top-bg-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(30, 30, 40, 0.93)),
+    color-stop(70%, rgba(30, 30, 40, 0.96)),
+    color-stop(80%, rgba(30, 30, 40, 0.99)),
+    to(#1e1e28)
+  );
+  background-image: linear-gradient(
+    180deg,
+    rgba(30, 30, 40, 0.93) 0%,
+    rgba(30, 30, 40, 0.96) 70%,
+    rgba(30, 30, 40, 0.99) 80%,
+    #1e1e28 100%
+  );
+}
+
+.main-banner-overlay {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px;
+  width: 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(15%, rgba(45, 45, 58, 0.9)),
+    color-stop(50%, rgba(45, 45, 58, 0.7)),
+    to(rgba(43, 43, 53, 0.7))
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgba(45, 45, 58, 0.9) 15%,
+    rgba(45, 45, 58, 0.7) 50%,
+    rgba(43, 43, 53, 0.7) 100%
+  );
+}
+
+.inner-content-wrapper > section:first-child {
+  padding-top: 30px;
+}
+
+.main-panel-section {
+  padding: 0 30px;
+}
+
+.small-screen .top-image-padding {
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.medium-screen .top-image-padding {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.large-screen .top-image-padding {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.main-art {
+  background-image: url(https://lemotivate.com/portfolio/bg.jpg);
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  z-index: 99;
+  margin-bottom: 30px;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.main-banner-content {
+  width: 100%;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.main-banner-title {
+  color: #fff;
+}
+
+.main-banner-title {
+  @media screen and (max-width: 1600px) {
+    font-size: 42px;
+  }
+  @media screen and (max-width: 1400px) {
+    font-size: 36px;
+  }
+  @media screen and (max-width: 1032px) {
+    font-size: 46px;
+    text-align: center;
+  }
+}
+
+.main-banner-caption {
+  font-size: 16px;
+  font-family: "Courier Prime", monospace;
+  color: #fafafc;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.main-banner-caption i {
+  font-style: normal;
+  color: #ffc107;
+}
+
+.small-screen .main-banner-caption {
+  text-align: center;
+}
+
+.small-screen .banner-btn-wrapper {
+  text-align: center;
+}
+
+.main-banner-btn {
+  height: 45px;
+  font-size: 12px;
+  padding: 0 35px;
+  box-shadow: none;
+  text-decoration: none;
+  margin-right: 15px;
+  background-color: #ffc107;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  color: #20202a;
+  background: #ffc107;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border: none;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.main-banner-btn span {
+  align-self: center;
+  transition: 0.2s ease-in-out;
+}
+
+.main-banner-photo {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  width: 390px;
+  height: auto;
+  max-width: 100%;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  @media screen and (max-width: 1600px) {
+    width: 360px;
+  }
+  @media screen and (max-width: 1400px) {
+    width: 320px;
+  }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.main-banner-back {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -30px;
+  width: 90%;
+  height: 30px;
+  margin-left: 5%;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: rgba(30, 30, 40, 0.88);
+
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
+}
+
+.front-stat {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+
+  @media screen and (min-width: 768px) {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.stat-frame {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.stat-counter-box {
+  min-width: 60px;
+}
+
+.stat-counter {
+  color: #ffc107;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}
+
+.main-banner-btn:hover {
+  margin-top: 4px;
+}
+
+.section-title {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.service-card-container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media screen and (min-width: 768px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  @media screen and (min-width: 992px) {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+.service-card {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+}
+
+.service-card-content {
+  padding: 30px;
+}
+
+.service-card-link {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #ffc107;
+  transition: 0.4s ease-in-out;
+}
+
+.with-chevron {
+  padding-right: 10px;
+}
+
+.with-chevron:hover {
+  padding-right: 16px;
+}
+
+.with-chevron:after {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: "\f054";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 9px;
+  top: 2px;
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.with-chevron:after {
+  right: 0;
+}
+
+.service-card-link:hover {
+  text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
+}
+
+.testimonial-wrapper {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media screen and (min-width: 768px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.recommendation-box {
+  position: relative;
+  background-size: cover;
+  padding: 30px;
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+}
+
+.testimonial-face {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  right: 30px;
+  top: -15px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+}
+
+.testimonial-subtitle {
+  margin-top: 5px;
+  color: #8c8c8e;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.testimonial-footer {
+  display: -webkit-box;
+}
+
+.testimonial-footer .rate-star {
+  margin: 0;
+  -webkit-box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  box-shadow: inset 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  padding: 5px 15px;
+  font-size: 10px;
+  margin-top: 5px;
+  background: #20202a;
+  border-radius: 30px;
+  display: -webkit-box;
+  color: #ffc107;
+}
+
+.rate-star li {
+  list-style-type: none;
+  margin-right: 5px;
+}
+
+.rate-star li:last-child {
+  margin-right: unset;
+}
