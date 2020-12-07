@@ -12,22 +12,37 @@ import DummyView from "./DummyView";
 
 function Portfolio({ match }) {
   const [isMenuOpen, setMenuStatus] = useState(false);
+  const [isInfoPanelOpen, setInfoPanelStatus] = useState(false);
 
-  const mainPanelClasses = cx("main-content", isMenuOpen ? "in-active" : null);
+  const infoPanelClasses = cx(
+    "left-info-panel",
+    isInfoPanelOpen ? "active" : null
+  );
+
+  const mainPanelClasses = cx(
+    "main-content",
+    isMenuOpen || isInfoPanelOpen ? "in-active" : null
+  );
 
   function curtainClicked() {
-    setMenuStatus(false);
+    if (isMenuOpen) setMenuStatus(false);
+    else if (isInfoPanelOpen) setInfoPanelStatus(false);
   }
 
   return (
     <RightMenuContextProvider
-      value={{ isMenuOpen: isMenuOpen, setMenuStatus: setMenuStatus }}
+      value={{
+        isMenuOpen: isMenuOpen,
+        setMenuStatus: setMenuStatus,
+        isInfoPanelOpen: isInfoPanelOpen,
+        setInfoPanelStatus: setInfoPanelStatus,
+      }}
     >
       <Fragment>
         <div className="mobile-top-bar"></div>
         <div className="main-app-wrapper">
           <div className="main-app-container">
-            <div className="left-info-panel">
+            <div className={infoPanelClasses}>
               <LeftInfoPanel />
             </div>
             <div className={mainPanelClasses}>

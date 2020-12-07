@@ -1,10 +1,24 @@
+import React, { useContext } from "react";
+import cx from "classnames";
+
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 import AnimatedProgressProvider from "../../Components/AnimatedProgressProvider";
 import HardSkillBar from "../../Components/HardSkillBar";
 
+import RightMenuContext from "../../Context/RightMenu";
+
 function LeftInfoPanel() {
+  const { isInfoPanelOpen, setInfoPanelStatus, isMenuOpen } = useContext(
+    RightMenuContext
+  );
+
+  const infoPanelToggleBtnClasses = cx(
+    "info-panel-toggle-btn",
+    isMenuOpen ? "in-active" : null
+  );
+
   const langProgressStyle = buildStyles({
     pathColor: "#ffc107",
     textColor: "#cacace",
@@ -14,6 +28,14 @@ function LeftInfoPanel() {
 
   return (
     <div className="padding-horizontal-15">
+      <div className="info-panel-top-bar">
+        <div
+          className={infoPanelToggleBtnClasses}
+          onClick={() => setInfoPanelStatus(!isInfoPanelOpen)}
+        >
+          <i className="fa fa-ellipsis-v"></i>
+        </div>
+      </div>
       <div className="info-panel-header">
         <div className="info-panel-avatar">
           <div className="avatar-curtain">

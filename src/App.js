@@ -13,7 +13,7 @@ function App() {
         <Fragment>
           <div
             className={cx(
-              { "padding 15 small-screen": width < 1033 },
+              { "small-screen": width < 1033 },
               { "medium-screen": width > 1032 && width < 1401 },
               { "large-screen": width > 1400 },
               "container"

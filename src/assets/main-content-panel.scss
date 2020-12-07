@@ -7,10 +7,19 @@
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
   overflow-y: scroll;
+
+  @media screen and (max-width: 1032px) {
+    position: relative;
+    padding-right: 0;
+    padding-top: 70px;
+    height: 100vh;
+  }
 }
 
 .main-content.in-active {
-  transform: translateX(-150px);
+  @media screen and (min-width: 1033px) {
+    transform: translateX(-150px);
+  }
 }
 
 .curtain {
@@ -93,6 +102,11 @@
 
 .main-panel-section {
   padding: 0 30px;
+
+  @media screen and (max-width: 1032px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .small-screen .top-image-padding {
