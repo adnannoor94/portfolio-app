@@ -11,7 +11,7 @@
   transition: 0.55s ease-in-out;
 
   @media screen and (max-width: 1032px) {
-    left: -290px;
+    transform: translateX(-290px);
     position: fixed;
     height: 100vh;
   }
@@ -19,7 +19,7 @@
 
 .left-info-panel.active {
   @media screen and (max-width: 1032px) {
-    transform: translateX(290px);
+    transform: translateX(0);
   }
 }
 

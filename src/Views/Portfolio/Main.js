@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Typist from "react-typist";
+import "react-typist/dist/Typist.css";
 
 import StatTag from "../../Components/StatTag";
 import ServiceCard from "../../Components/ServiceCard";
 import TestimonialCard from "../../Components/TestimonialCard";
 
+const IBuildString = [
+  "web interfaces.",
+  "ios and android applications.",
+  "automation tools.",
+];
+
 function Main() {
+  const [refresh, setRefresh] = useState(false);
   return (
     <div className="inner-content-wrapper">
       <section className="main-panel-section">
@@ -20,7 +30,30 @@ function Main() {
                   <div className="main-banner-caption mb-25">
                     {"<"}
                     <i>code</i>
-                    {"> "} I build web interfaces.
+                    {"> "} I build{" "}
+                    {!refresh && (
+                      <Typist
+                        startDelay={2000}
+                        onTypingDone={() => {
+                          setRefresh(true);
+                          setTimeout(() => {
+                            setRefresh(false);
+                          }, 500);
+                        }}
+                      >
+                        {IBuildString.map((typeString, index) => {
+                          return (
+                            <span key={index + "-type-string"}>
+                              {typeString}
+                              <Typist.Backspace
+                                count={typeString.length}
+                                delay={2000}
+                              />
+                            </span>
+                          );
+                        })}
+                      </Typist>
+                    )}
                     {" </"}
                     <i>code</i>
                     {">"}

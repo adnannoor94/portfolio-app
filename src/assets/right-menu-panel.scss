@@ -11,6 +11,11 @@
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
+
+  @media screen and (max-width: 1032px) {
+    transform: translateX(150px);
+    height: 100vh;
+  }
 }
 
 .right-menu-panel.active {
@@ -49,6 +54,17 @@
 
 .menu-bar-btn {
   padding: 15px;
+
+  @media screen and (max-width: 1032px) {
+    transform: translateX(-150px);
+    transition: 0.4s ease-in-out;
+  }
+}
+
+.active .menu-bar-btn {
+  @media screen and (max-width: 1032px) {
+    transform: translateX(0);
+  }
 }
 
 .menu-current-page {

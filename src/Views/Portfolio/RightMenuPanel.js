@@ -27,7 +27,7 @@ function RightMenuPanel() {
       <div className="menu-bar-frame">
         <div className="menu-bar-header">
           <div className="menu-bar-btn">
-            <Hamburger toggled={isMenuOpen} toggle={setMenuStatus} />
+            <Hamburger toggled={isMenuOpen} toggle={setMenuStatus} size={20} />
           </div>
         </div>
         <div className="menu-current-page">{currentPageName}</div>
