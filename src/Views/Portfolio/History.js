@@ -13,7 +13,7 @@ function Main() {
     },
     {
       title: "May 1940",
-      cardTitle: "Dunkirkiou",
+      cardTitle: "Dunkirkiou - io",
     },
   ];
 
