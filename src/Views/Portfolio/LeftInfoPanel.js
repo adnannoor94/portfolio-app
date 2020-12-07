@@ -100,6 +100,7 @@ function LeftInfoPanel() {
           <li>Bootstrap</li>
           <li>Sass</li>
           <li>GIT Knowledge</li>
+          <li>Dockerization</li>
         </ul>
         <div className="horizontal-divider"></div>
         <div className="links-frame p-15-15">

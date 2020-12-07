@@ -24,6 +24,7 @@ function Portfolio({ match }) {
       value={{ isMenuOpen: isMenuOpen, setMenuStatus: setMenuStatus }}
     >
       <Fragment>
+        <div className="mobile-top-bar"></div>
         <div className="main-app-wrapper">
           <div className="main-app-container">
             <div className="left-info-panel">

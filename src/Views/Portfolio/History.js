@@ -1,22 +1,8 @@
 import React from "react";
-import { Chrono } from "react-chrono";
 
-function Main() {
-  const items = [
-    {
-      title: "May 1940",
-      cardTitle: "Dunkirk",
-    },
-    {
-      title: "May 1940",
-      cardTitle: "Dunkirk",
-    },
-    {
-      title: "May 1940",
-      cardTitle: "Dunkirkiou - io",
-    },
-  ];
+import TimelineItem from "../../Components/TimelineItem";
 
+function History() {
   return (
     <div className="inner-content-wrapper">
       <section className="main-panel-section">
@@ -24,15 +10,33 @@ function Main() {
           <div className="section-title">
             <h4>History</h4>
           </div>
-          <Chrono items={items} mode="VERTICAL_ALTERNATING">
-            <div>
-              <p>Lorem Ipsum. Lorem Ipsum. Lorem Ipsum</p>
-            </div>
-          </Chrono>
+          <div className="history-panel">
+            <TimelineItem
+              title="Transworld Associates"
+              subtitle="Senior Software Developer"
+              date="since sep 2019"
+              description="Some job description. To tell about the experience and
+            stuff."
+            />
+            <TimelineItem
+              title="Nayatel"
+              subtitle="Senior Software Engineer"
+              date="nov 2016 - sep 2019"
+              description="Some job description. To tell about the experience and
+            stuff."
+            />
+            <TimelineItem
+              title="Foundation Unversity"
+              subtitle="Bachelor of Sofware Engineering"
+              date="aug 2012 - june 2016"
+              description="Some job description. To tell about the experience and
+            stuff."
+            />
+          </div>
         </div>
       </section>
     </div>
   );
 }
 
-export default Main;
+export default History;

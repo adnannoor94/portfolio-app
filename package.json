@@ -12,7 +12,6 @@
     "lodash": "^4.17.20",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
-    "react-chrono": "^1.8.3",
     "react-circular-progressbar": "^2.0.3",
     "react-dom": "^17.0.1",
     "react-move": "^6.4.0",
