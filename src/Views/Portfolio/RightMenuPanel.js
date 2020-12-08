@@ -9,7 +9,7 @@ const allPages = [
   { label: "Home", to: "#/portfolio/main" },
   { label: "Portfolio", to: "#/portfolio/dummy" },
   { label: "History", to: "#/portfolio/history" },
-  { label: "Contact", to: "#/portfolio/dummy" },
+  { label: "Contact", to: "#/portfolio/contact" },
 ];
 
 function RightMenuPanel() {

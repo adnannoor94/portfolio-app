@@ -1,0 +1,91 @@
+.form-field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-field input,
+.form-field textarea {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(159deg, #252532 0%, #23232d 100%);
+  border: none;
+  color: #fafafc;
+  padding-left: 65px;
+  padding-right: 15px;
+  -webkit-box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  margin-bottom: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.form-field label {
+  text-align: center;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: #20202a;
+  top: 0;
+  left: 0;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  cursor: text;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+input.is-invalid,
+select.is-invalid,
+textarea.is-invalid {
+  box-shadow: 0 0 3px #cc0000;
+}
+
+input:focus + label {
+  background: #ffc107;
+  color: #20202a;
+}
+
+textarea:focus + label {
+  background: #ffc107;
+  color: #20202a;
+}
+
+label.is-invalid {
+  background: #cc0000;
+  color: white;
+}
+
+.invalid-feedback {
+  color: #cc0000;
+  margin-top: 0.3rem;
+}
+
+.form-field textarea {
+  resize: none;
+  height: 150px;
+}
+
+.form-field textarea + label {
+  height: 150px;
+}

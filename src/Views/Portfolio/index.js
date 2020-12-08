@@ -8,6 +8,7 @@ import LeftInfoPanel from "./LeftInfoPanel";
 import RightMenuPanel from "./RightMenuPanel";
 import Main from "./Main";
 import History from "./History";
+import Contact from "./Contact";
 import DummyView from "./DummyView";
 
 function Portfolio({ match }) {
@@ -53,6 +54,7 @@ function Portfolio({ match }) {
               <div className="transition-fade">
                 <Route path={`${match.url}/main`} component={Main} />
                 <Route path={`${match.url}/history`} component={History} />
+                <Route path={`${match.url}/contact`} component={Contact} />
                 <Route path={`${match.url}/dummy`} component={DummyView} />
               </div>
             </div>

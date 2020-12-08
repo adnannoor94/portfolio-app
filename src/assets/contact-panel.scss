@@ -1,0 +1,39 @@
+.contact-info-card-wrapper {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media screen and (min-width: 600px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+.contact-card-wrapper {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.contact-card {
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: 0.55s ease-in-out;
+}
+
+.info-table ul li strong {
+  font-size: 13px;
+  font-weight: 400;
+  color: #fafafc;
+  line-height: 1.7;
+}
