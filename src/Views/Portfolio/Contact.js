@@ -3,6 +3,8 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
+import axios from "axios";
+
 const ValidationSchema = Yup.object().shape({
   name: Yup.string()
     .max(50, "Too Long!")
@@ -97,19 +99,27 @@ function History() {
                     emailContent: "",
                   }}
                   validationSchema={ValidationSchema}
-                  onSubmit={(values, { setSubmitting }) => {
-                    console.log(values);
+                  onSubmit={(values, { setSubmitting, resetForm }) => {
+                    setSubmitting(true);
+
+                    axios
+                      .post(
+                        "https://lemotivate.com/portfolioAjax",
+                        JSON.stringify(values)
+                      )
+                      .then((result) => {
+                        console.log(result.data);
+                        setSubmitting(false);
+                        resetForm();
+                      })
+                      .catch((error) => {
+                        console.log(error);
+                        setSubmitting(false);
+                      });
                   }}
                 >
-                  {({
-                    values,
-                    errors,
-                    dirty,
-                    isSubmitting,
-                    touched,
-                    handleReset,
-                  }) => (
-                    <div className="form">
+                  {({ errors, isSubmitting, touched }) => (
+                    <Form>
                       <div className="form-field">
                         <Field
                           type="text"
@@ -185,7 +195,14 @@ function History() {
                           className="invalid-feedback"
                         />
                       </div>
-                    </div>
+                      <button
+                        className="main-banner-btn"
+                        type="submit"
+                        disabled={isSubmitting}
+                      >
+                        <span>Send Message</span>
+                      </button>
+                    </Form>
                   )}
                 </Formik>
               </div>

@@ -56,6 +56,17 @@ function Portfolio({ match }) {
                 <Route path={`${match.url}/history`} component={History} />
                 <Route path={`${match.url}/contact`} component={Contact} />
                 <Route path={`${match.url}/dummy`} component={DummyView} />
+                <div className="footer-container">
+                  <footer>
+                    <div>© 2020 All Rights Reserved.</div>
+                    <div>
+                      Email:{" "}
+                      <a href="mailto:adnannoor@outlook.com" target="_blank">
+                        adnannoor@outlook.com
+                      </a>
+                    </div>
+                  </footer>
+                </div>
               </div>
             </div>
             <RightMenuPanel />

@@ -48,6 +48,11 @@ textarea {
   line-height: inherit;
 }
 
+textarea {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -88,4 +93,8 @@ label.is-invalid {
 
 .form-field textarea + label {
   height: 150px;
+}
+
+button:hover {
+  cursor: pointer;
 }
