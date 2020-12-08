@@ -90,15 +90,15 @@ function Main() {
           </div>
           <ServiceCard
             label="Web Development"
-            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+            text="Share your idea with the world through modern and responsive web site. A beyond beautiful design to give your brand a voice. Lets see your creativity grow."
           />
           <ServiceCard
             label="Hybrid Mobile App Development"
-            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+            text="Now is the time to start your business through mobile app for both android and iOS. Reveal what is possible. Lets hear about that business idea of yours."
           />
           <ServiceCard
-            label="Desktop (Electron.js) Development"
-            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+            label="Desktop App Development"
+            text="Enrich your day to day task with creativity by automating it through a desktop app for windows and macOS. Solve your complex needs. Lets make the pixels productive for you."
           />
         </div>
       </section>

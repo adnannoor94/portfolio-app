@@ -172,6 +172,14 @@ a {
   margin-bottom: 10px;
 }
 
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -251,6 +259,10 @@ a {
   overflow: hidden;
   padding: 0 30px;
   position: relative;
+
+  @media screen and (max-width: 1032px) {
+    padding: unset;
+  }
 }
 
 footer {
