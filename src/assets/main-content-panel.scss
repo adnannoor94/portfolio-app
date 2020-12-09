@@ -48,7 +48,7 @@
   background-position: center;
   height: 400px;
   background-size: cover;
-  background-image: url(https://lemotivate.com/portfolio/bg.jpg);
+  background-image: url(https://adnannoor.me/assets/bg.jpg);
 }
 
 .main-top-bg-overlay {
@@ -125,7 +125,7 @@
 }
 
 .main-art {
-  background-image: url(https://lemotivate.com/portfolio/bg.jpg);
+  background-image: url(https://adnannoor.me/assets/bg.jpg);
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
   background-size: cover;
@@ -390,6 +390,10 @@
     flex: 0 0 50%;
     max-width: 50%;
   }
+}
+
+.testimonial-wrapper:first-child {
+  margin-top: 18px;
 }
 
 .recommendation-box {

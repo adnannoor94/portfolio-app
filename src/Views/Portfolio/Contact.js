@@ -104,7 +104,7 @@ function History() {
 
                     axios
                       .post(
-                        "https://lemotivate.com/portfolioAjax",
+                        "https://adnannoor.me/portfolioAjax",
                         JSON.stringify(values)
                       )
                       .then((result) => {

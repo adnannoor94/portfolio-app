@@ -40,7 +40,7 @@ function LeftInfoPanel() {
         <div className="info-panel-avatar">
           <div className="avatar-curtain">
             <img
-              src="https://lemotivate.com/portfolio/top-thumbnail.jpeg"
+              src="https://adnannoor.me/assets/top-thumbnail.jpeg"
               alt="avatar"
             />
           </div>
@@ -127,10 +127,9 @@ function LeftInfoPanel() {
         <div className="horizontal-divider"></div>
         <div className="links-frame p-15-15">
           <a
-            href="https://frive.google.com/"
+            href="https://adnannoor.me/assets/resume.pdf"
             className="art-link"
-            target="_blank"
-            rel="noreferrer"
+            download="Adnan Resume"
           >
             Download CV <i className="fa fa-download"></i>
           </a>

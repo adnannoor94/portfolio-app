@@ -4,7 +4,7 @@
   "private": true,
   "description": "Adnan Noor Portfolio",
   "author": "Adnan Noor",
-  "homepage": "https://lemotivate.com/adnannoor",
+  "homepage": "https://adnannoor.me",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",

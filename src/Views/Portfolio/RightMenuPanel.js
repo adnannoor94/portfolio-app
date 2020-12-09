@@ -7,7 +7,7 @@ import RightMenuContext from "../../Context/RightMenu";
 
 const allPages = [
   { label: "Home", to: "#/portfolio/main" },
-  { label: "Portfolio", to: "#/portfolio/dummy" },
+  // { label: "Portfolio", to: "#/portfolio/dummy" },
   { label: "History", to: "#/portfolio/history" },
   { label: "Contact", to: "#/portfolio/contact" },
 ];

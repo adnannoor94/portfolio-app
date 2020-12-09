@@ -24,8 +24,8 @@ function Main() {
               <div className="main-banner-overlay">
                 <div className="main-banner-content">
                   <h1 className="main-banner-title mb-15">
-                    Discover my Amazing <br />
-                    Art Space!
+                    Pixels have Rights <br />
+                    too!
                   </h1>
                   <div className="main-banner-caption mb-25">
                     {"<"}
@@ -90,7 +90,7 @@ function Main() {
           </div>
           <ServiceCard
             label="Web Development"
-            text="Share your idea with the world through modern and responsive web site. A beyond beautiful design to give your brand a voice. Lets see your creativity grow."
+            text="Share your idea with the world through modern and responsive web sites. A beyond beautiful design to give your brand a voice. Lets see your creativity grow."
           />
           <ServiceCard
             label="Hybrid Mobile App Development"
@@ -98,7 +98,7 @@ function Main() {
           />
           <ServiceCard
             label="Desktop App Development"
-            text="Enrich your day to day task with creativity by automating it through a desktop app for windows and macOS. Solve your complex needs. Lets make the pixels productive for you."
+            text="Smoothen your day to day task efficiently by automating it through a desktop app for windows and macOS. Solve your complex needs. Lets make the pixels productive for you."
           />
         </div>
       </section>
@@ -109,15 +109,16 @@ function Main() {
           </div>
           <div className="testimonial-wrapper">
             <TestimonialCard
-              title="John Mundi."
+              title="John Mundi"
               subTitle="Client at Upwork"
-              content="Adnan Listens well and understands how Applications work and websites work. He is innovative and definitely keeps in touch with the client. He has truly been exceptional with what we have requested and has gone above and beyond what was requested. Will be working with him on all of our projects from now on. AMAZING. We highly recommend him as he will look into anything we need or wanted and completed it in a very proficient way. He has helped definitely with all aspects of the website and app that he developed from the beginning to end. THANK YOU YOUR SKILLS ARE EXCEPTIONAL."
+              content="Adnan Listens well and understands how Applications work and websites work. 
+              He is innovative and definitely keeps in touch with the client. 
+              He has truly been exceptional with what we have requested and has gone above and beyond what was requested. 
+              Will be working with him on all of our projects from now on. AMAZING. 
+              We highly recommend him as he will look into anything we need or wanted and completed it in a very proficient way. 
+              He has helped definitely with all aspects of the website and app that he developed from the beginning to end. 
+              THANK YOU YOUR SKILLS ARE EXCEPTIONAL."
               imgUrl="https://www.upwork.com/static/images/upwork-fb.png"
-            />
-            <TestimonialCard
-              title="Nayatel"
-              content="Excellent coder fast replies good work."
-              imgUrl="https://lemotivate.com/portfolio/nayatel-logo.png"
             />
           </div>
           <div className="testimonial-wrapper">
@@ -128,9 +129,9 @@ function Main() {
               imgUrl="https://www.upwork.com/static/images/upwork-fb.png"
             />
             <TestimonialCard
-              title="TransWorld"
-              content="Adnan Listens well and understands how Applications work and websites work. He is innovative and definitely keeps in touch with the client. He has truly been exceptional with what we have requested and has gone above and beyond what was requested. Will be working with him on all of our projects from now on. AMAZING. We highly recommend him as he will look into anything we need or wanted and completed it in a very proficient way. He has helped definitely with all aspects of the website and app that he developed from the beginning to end. THANK YOU YOUR SKILLS ARE EXCEPTIONAL."
-              imgUrl="https://lemotivate.com/portfolio/transworld-logo.png"
+              title="Nayatel"
+              content="During his stay in the company we found him to be a hardworking and dedicated employee. We wish him success in his future endeavors."
+              imgUrl="https://adnannoor.me/assets/nayatel-logo.png"
             />
           </div>
         </div>
