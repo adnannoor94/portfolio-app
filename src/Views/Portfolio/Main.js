@@ -59,7 +59,7 @@ function Main() {
                     {">"}
                   </div>
                   <div className="banner-btn-wrapper">
-                    <a href="#/portfolio/contact" className="main-banner-btn">
+                    <a href="#/contact" className="main-banner-btn">
                       <span>Get in Touch</span>
                     </a>
                   </div>

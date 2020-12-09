@@ -6,10 +6,9 @@ import Hamburger from "hamburger-react";
 import RightMenuContext from "../../Context/RightMenu";
 
 const allPages = [
-  { label: "Home", to: "#/portfolio/main" },
-  // { label: "Portfolio", to: "#/portfolio/dummy" },
-  { label: "History", to: "#/portfolio/history" },
-  { label: "Contact", to: "#/portfolio/contact" },
+  { label: "Home", to: "#/main" },
+  { label: "History", to: "#/history" },
+  { label: "Contact", to: "#/contact" },
 ];
 
 function RightMenuPanel() {

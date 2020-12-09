@@ -7,11 +7,11 @@ export default () => {
   return (
     <Fragment>
       {/* Portfolio */}
-      <Suspense fallback={<h1>Loading</h1>}>
-        <Route path="/portfolio" component={Portfolio} />
+      <Suspense fallback={<h1 className="loading-center">Loading..</h1>}>
+        <Route path="/" component={Portfolio} />
       </Suspense>
 
-      <Route exact patch="/" render={() => <Redirect to="/portfolio/main" />} />
+      <Route exact patch="/" render={() => <Redirect to="/main" />} />
     </Fragment>
   );
 };

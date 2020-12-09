@@ -7,10 +7,7 @@ function ServiceCard({ label, text }) {
         <div className="service-card-content">
           <h5 className="mb-15"> {label} </h5>
           <p className="mb-15">{text}</p>
-          <a
-            href="#/portfolio/contact"
-            className="service-card-link with-chevron"
-          >
+          <a href="#/contact" className="service-card-link with-chevron">
             <span>Order Now</span>
           </a>
         </div>

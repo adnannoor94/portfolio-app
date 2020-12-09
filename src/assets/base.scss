@@ -306,3 +306,11 @@ footer a {
 footer a:hover {
   color: #fafafc;
 }
+
+.loading-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -130px; /* margin is -0.5 * dimension */
+  margin-top: -25px;
+}

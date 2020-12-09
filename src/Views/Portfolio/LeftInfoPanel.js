@@ -46,7 +46,7 @@ function LeftInfoPanel() {
           </div>
         </div>
         <h5 className="info-panel-name mb-10">
-          <a href="#/portfolio/main">Adnan Noor</a>
+          <a href="#/main">Adnan Noor</a>
         </h5>
         <div className="info-sm-text">
           Front-end Developer

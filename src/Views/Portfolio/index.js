@@ -52,10 +52,9 @@ function Portfolio({ match }) {
                 <div className="main-top-bg-overlay"></div>
               </div>
               <div className="transition-fade">
-                <Route path={`${match.url}/main`} component={Main} />
-                <Route path={`${match.url}/history`} component={History} />
-                <Route path={`${match.url}/contact`} component={Contact} />
-                <Route path={`${match.url}/dummy`} component={DummyView} />
+                <Route path={`/main`} component={Main} />
+                <Route path={`/history`} component={History} />
+                <Route path={`/contact`} component={Contact} />
                 <div className="footer-container">
                   <footer>
                     <div>© 2020 All Rights Reserved.</div>
