@@ -309,8 +309,14 @@ footer a:hover {
 
 .loading-center {
   position: absolute;
-  top: 50%;
+  bottom: 10%;
   left: 50%;
   margin-left: -130px; /* margin is -0.5 * dimension */
   margin-top: -25px;
+}
+
+.logo-over-loading {
+  width: 120px;
+  margin-left: 58px;
+  margin-bottom: 30px;
 }

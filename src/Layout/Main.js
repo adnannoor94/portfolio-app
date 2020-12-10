@@ -7,7 +7,18 @@ export default () => {
   return (
     <Fragment>
       {/* Portfolio */}
-      <Suspense fallback={<h1 className="loading-center">Loading..</h1>}>
+      <Suspense
+        fallback={() => (
+          <div className="loading-center">
+            <img
+              className="logo-over-loading"
+              src="/assets/logo.png"
+              alt="logo"
+            />
+            <h1>Loading...</h1>
+          </div>
+        )}
+      >
         <Route path="/" component={Portfolio} />
       </Suspense>
 

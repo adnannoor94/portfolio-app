@@ -39,10 +39,7 @@ function LeftInfoPanel() {
       <div className="info-panel-header">
         <div className="info-panel-avatar">
           <div className="avatar-curtain">
-            <img
-              src="https://adnannoor.me/assets/top-thumbnail.jpeg"
-              alt="avatar"
-            />
+            <img src="/assets/top-thumbnail.jpeg" alt="avatar" />
           </div>
         </div>
         <h5 className="info-panel-name mb-10">
@@ -127,7 +124,7 @@ function LeftInfoPanel() {
         <div className="horizontal-divider"></div>
         <div className="links-frame p-15-15">
           <a
-            href="https://adnannoor.me/assets/resume.pdf"
+            href="/assets/resume.pdf"
             className="art-link"
             download="Adnan Resume"
           >

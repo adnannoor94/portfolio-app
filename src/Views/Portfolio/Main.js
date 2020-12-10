@@ -24,8 +24,8 @@ function Main() {
               <div className="main-banner-overlay">
                 <div className="main-banner-content">
                   <h1 className="main-banner-title mb-15">
-                    Pixels have Rights <br />
-                    too!
+                    Pixels Have Rights <br />
+                    Too!
                   </h1>
                   <div className="main-banner-caption mb-25">
                     {"<"}
@@ -65,7 +65,7 @@ function Main() {
                   </div>
                 </div>
                 <img
-                  src="https://bslthemes.com/arter-wp/wp-content/uploads/2020/09/face-2-min.png"
+                  src="/assets/logo.png"
                   className="main-banner-photo"
                   alt="Adnan Noor"
                 />
@@ -131,7 +131,7 @@ function Main() {
             <TestimonialCard
               title="Nayatel"
               content="During his stay in the company we found him to be a hardworking and dedicated employee. We wish him success in his future endeavors."
-              imgUrl="https://adnannoor.me/assets/nayatel-logo.png"
+              imgUrl="/assets/nayatel-logo.png"
             />
           </div>
         </div>
