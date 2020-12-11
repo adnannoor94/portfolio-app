@@ -14,7 +14,7 @@ const ValidationSchema = Yup.object().shape({
   emailContent: Yup.string().required("Required"),
 });
 
-function History() {
+function Contact() {
   return (
     <div className="inner-content-wrapper">
       <section className="main-panel-section">
@@ -214,4 +214,4 @@ function History() {
   );
 }
 
-export default History;
+export default Contact;

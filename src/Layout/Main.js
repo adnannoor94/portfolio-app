@@ -3,7 +3,7 @@ import React, { Suspense, lazy, Fragment } from "react";
 
 const Portfolio = lazy(() => import("../Views/Portfolio"));
 
-export default () => {
+function MainRenderer() {
   return (
     <Fragment>
       {/* Portfolio */}
@@ -25,4 +25,6 @@ export default () => {
       <Route exact patch="/" render={() => <Redirect to="/main" />} />
     </Fragment>
   );
-};
+}
+
+export default MainRenderer;

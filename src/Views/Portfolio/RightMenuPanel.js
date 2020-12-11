@@ -20,7 +20,7 @@ function RightMenuPanel() {
     const currentHash = window.location.hash;
     const currentPageInfo = allPages.find((page) => page.to === currentHash);
     if (currentPageInfo) setCurrentPage(currentPageInfo.label);
-  }, []);
+  });
 
   return (
     <div className={mainPanelClasses}>
