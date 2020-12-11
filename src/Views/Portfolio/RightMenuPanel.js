@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import cx from "classnames";
 
 import Hamburger from "hamburger-react";
@@ -16,10 +16,11 @@ function RightMenuPanel() {
   const { isMenuOpen, setMenuStatus } = useContext(RightMenuContext);
   const mainPanelClasses = cx("right-menu-panel", isMenuOpen ? "active" : null);
 
-  const changePage = (pageName) => {
-    setCurrentPage(pageName);
-    setMenuStatus(false);
-  };
+  useEffect(() => {
+    const currentHash = window.location.hash;
+    const currentPageInfo = allPages.find((page) => page.to === currentHash);
+    if (currentPageInfo) setCurrentPage(currentPageInfo.label);
+  }, []);
 
   return (
     <div className={mainPanelClasses}>
@@ -41,7 +42,7 @@ function RightMenuPanel() {
                       currentPageName === page.label ? "active-url" : null
                     }`}
                   >
-                    <a href={page.to} onClick={() => changePage(page.label)}>
+                    <a href={page.to} onClick={() => setMenuStatus(false)}>
                       {page.label}
                     </a>
                   </li>

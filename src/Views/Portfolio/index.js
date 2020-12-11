@@ -9,9 +9,8 @@ import RightMenuPanel from "./RightMenuPanel";
 import Main from "./Main";
 import History from "./History";
 import Contact from "./Contact";
-import DummyView from "./DummyView";
 
-function Portfolio({ match }) {
+function Portfolio() {
   const [isMenuOpen, setMenuStatus] = useState(false);
   const [isInfoPanelOpen, setInfoPanelStatus] = useState(false);
 
@@ -60,7 +59,11 @@ function Portfolio({ match }) {
                     <div>© 2020 All Rights Reserved.</div>
                     <div>
                       Email:{" "}
-                      <a href="mailto:adnannoor@outlook.com" target="_blank">
+                      <a
+                        href="mailto:adnannoor@outlook.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         adnannoor@outlook.com
                       </a>
                     </div>

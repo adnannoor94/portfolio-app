@@ -9,7 +9,7 @@ function TimelineItem({ title, subtitle, date, description }) {
           <div className="content-header">
             <div className="header-left">
               <h5>{title}</h5>
-              <div class="testimonial-subtitle mb-15">{subtitle}</div>
+              <div className="testimonial-subtitle mb-15">{subtitle}</div>
             </div>
             <div className="header-right">
               <div className="header-date">{date}</div>
