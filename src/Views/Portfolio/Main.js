@@ -65,7 +65,7 @@ function Main() {
                   </div>
                 </div>
                 <img
-                  src="/assets/logo.png"
+                  src="/assets/frontPic.webp"
                   className="main-banner-photo"
                   alt="Adnan Noor"
                 />
