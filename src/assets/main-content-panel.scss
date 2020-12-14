@@ -383,6 +383,9 @@
 }
 
 .testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -391,10 +394,6 @@
     flex: 0 0 50%;
     max-width: 50%;
   }
-}
-
-.testimonial-wrapper:first-child {
-  margin-top: 18px;
 }
 
 .recommendation-box {

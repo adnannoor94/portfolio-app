@@ -39,7 +39,7 @@ function LeftInfoPanel() {
       <div className="info-panel-header">
         <div className="info-panel-avatar">
           <div className="avatar-curtain">
-            <img src="/assets/top-thumbnail.jpeg" alt="avatar" />
+            <img src="/assets/top-thumbnail.png" alt="avatar" />
           </div>
         </div>
         <h5 className="info-panel-name mb-10">
