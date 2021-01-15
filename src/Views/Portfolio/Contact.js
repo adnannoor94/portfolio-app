@@ -68,7 +68,7 @@ function Contact() {
                 <ul>
                   <li>
                     <strong>LinkedIn: </strong>
-                    adnan-noor-5b7780122
+                    adnannoor
                   </li>
                   <li>
                     <strong>Whatsapp: </strong>
