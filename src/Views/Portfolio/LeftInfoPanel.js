@@ -48,7 +48,7 @@ function LeftInfoPanel() {
         <div className="info-sm-text">
           Front-end Developer
           <br />
-          React Developer
+          React and Vue.js Developer
         </div>
       </div>
       <div className="info-scroll-frame">
