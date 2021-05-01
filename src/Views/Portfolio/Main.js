@@ -65,7 +65,7 @@ function Main() {
                   </div>
                 </div>
                 <img
-                  src="/assets/frontPic.webp"
+                  src="/assets/logo.webp"
                   className="main-banner-photo"
                   alt="Adnan Noor"
                 />
@@ -77,7 +77,7 @@ function Main() {
       </section>
       <section className="main-panel-section">
         <div className="row">
-          <StatTag label="Years Experience" value="4" />
+          <StatTag label="Years Experience" value="5" />
           <StatTag label="Completed Projects" value="34" />
           <StatTag label="Happy Customers" value="8" />
           <StatTag label="Honors and Awards" value="15" />

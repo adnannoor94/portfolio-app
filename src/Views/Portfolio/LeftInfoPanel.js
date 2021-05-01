@@ -64,7 +64,7 @@ function LeftInfoPanel() {
             </li>
             <li>
               <h6>Age:</h6>
-              <span>26</span>
+              <span>27</span>
             </li>
           </ul>
         </div>
@@ -108,16 +108,16 @@ function LeftInfoPanel() {
         <div className="horizontal-divider"></div>
         <div className="hard-skills-container p-30-15">
           <HardSkillBar label="React" value={90} />
+          <HardSkillBar label="Vue.js" value={80} />
           <HardSkillBar label="Node.js / Javascript" value={80} />
-          <HardSkillBar label="PHP" value={80} />
-          <HardSkillBar label="CSS" value={85} />
+          <HardSkillBar label="PHP / Laravel" value={80} />
+          <HardSkillBar label="CSS / SASS" value={85} />
           <HardSkillBar label="MySQL" value={65} />
         </div>
         <div className="horizontal-divider"></div>
         <ul className="knowledge-list padding-left-none p-15-0">
           <li>UI/UX Designing</li>
           <li>Bootstrap</li>
-          <li>Sass</li>
           <li>GIT Knowledge</li>
           <li>Dockerization</li>
         </ul>
@@ -134,7 +134,7 @@ function LeftInfoPanel() {
       </div>
       <div className="social-links">
         <a
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/adnannoor"
           target="_blank"
           rel="noreferrer"
           className="social-link"
@@ -142,15 +142,7 @@ function LeftInfoPanel() {
           <i className="fa fa-linkedin"></i>
         </a>
         <a
-          href="https://dribble.com"
-          target="_blank"
-          rel="noreferrer"
-          className="social-link"
-        >
-          <i className="fa fa-dribbble"></i>
-        </a>
-        <a
-          href="https://facebook.com"
+          href="https://facebook.com/ednannur.21"
           target="_blank"
           rel="noreferrer"
           className="social-link"
@@ -158,7 +150,7 @@ function LeftInfoPanel() {
           <i className="fa fa-facebook"></i>
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/adnannoor94"
           target="_blank"
           rel="noreferrer"
           className="social-link"
@@ -166,7 +158,7 @@ function LeftInfoPanel() {
           <i className="fa fa-github"></i>
         </a>
         <a
-          href="https://twitter.com"
+          href="https://twitter.com/adnannoor_21"
           target="_blank"
           rel="noreferrer"
           className="social-link"

@@ -13,9 +13,9 @@ function History() {
           <div className="history-panel">
           <TimelineItem
               title="Dubicars.com"
-              subtitle="Senior Software Engineer - Frontend"
+              subtitle="Senior Software Engineer"
               date="since Feb 2021"
-              description="Fontend Developer - UI/UX Designer - Vue.js Developer"
+              description="Leading the frontend development of dubicars.com; keeping the UI highly interactive and responsive for heavy traffic."
             />
             <TimelineItem
               title="Transworld Associates"
@@ -27,13 +27,13 @@ function History() {
               title="Nayatel"
               subtitle="Senior Software Engineer"
               date="Nov 2016 - Sep 2019"
-              description="Revamped frontend and backend of the inhouse CRM; developed new features for automation of processes and provided support."
+              description="Revamped the frontend and backend of the inhouse CRM; developed new features for automation of processes and provided technical support."
             />
             <TimelineItem
               title="Foundation Unversity"
               subtitle="Student"
               date="Aug 2012 - June 2016"
-              description="Bachelor's degree in Software Engineering. In-depth study courses for each phase of software development life cycle."
+              description="Studied in-depth courses for each phase of software development life cycle. Final year project on Genetic Algorithm."
             />
           </div>
         </div>

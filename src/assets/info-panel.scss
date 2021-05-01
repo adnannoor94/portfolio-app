@@ -260,8 +260,6 @@
 }
 
 .social-links {
-  /* Prvent the UI from any event triggering */
-  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

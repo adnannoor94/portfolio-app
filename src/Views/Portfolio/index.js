@@ -56,9 +56,8 @@ function Portfolio() {
                 <Route path={`/contact`} component={Contact} />
                 <div className="footer-container">
                   <footer>
-                    <div>© 2020 All Rights Reserved.</div>
+                    <div>© 2021 All Rights Reserved.</div>
                     <div>
-                      Email:{" "}
                       <a
                         href="mailto:adnannoor@outlook.com"
                         target="_blank"
