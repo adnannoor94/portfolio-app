@@ -5,7 +5,7 @@ Demo: [https://adnannoor.me](https://adnannoor.me)
 
 # The Code Behind
 
-In terms of react, the whole application is divided in 4 major components: **Main, History, Contact, LeftInfoPanel** and **RightMenuPanel**. As the name suggests, each component deals with all the working regarding the named functionality.
+In terms of react, the whole application is divided in 4 major components: **Main, History, Contact, LeftInfoPanel** and **RightMenuPanel**. As the name suggests, each component deals with all the working regarding the named functionality. Every component is written with React Hooks.
 
 CSS is written in SASS for better flexibility of coding style.
 
